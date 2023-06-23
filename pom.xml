@@ -10,13 +10,13 @@
     <repository>
       <id>1</id>
       <name>internal release</name>
-      <url>http://172.16.49.137:8081/repository/gabagool/</url>
+      <url>http://172.16.49.140:8081/repository/gabagool/</url>
     </repository>
       
     <snapshotRepository>
       <id>1</id>
       <name>internal release</name>
-      <url>http://172.16.49.137:8081/repository/snapshotagool/</url>
+      <url>http://172.16.49.140:8081/repository/snapshotagool/</url>
     </snapshotRepository>
 
   </distributionManagement>
