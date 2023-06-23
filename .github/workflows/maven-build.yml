@@ -26,4 +26,4 @@ jobs:
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
       - name: deploy to nexus
-        run: mvn deploy
+        run: ./mvnw deploy
