@@ -3,20 +3,20 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>3.1.0-SNAPSHOT</version>
+  <version>3.1.2</version>
   
   <distributionManagement>
 
     <repository>
-      <id>1</id>
+      <id>spc</id>
       <name>internal release</name>
-      <url>http://172.16.49.140:8081/repository/gabagool/</url>
+      <url>http://localhost:8081/repository/spc-release/</url>
     </repository>
       
     <snapshotRepository>
-      <id>1</id>
+      <id>spc</id>
       <name>internal release</name>
-      <url>http://172.16.49.140:8081/repository/snapshotagool/</url>
+      <url>http://localhost:8081/repository/spc-snapshot/</url>
     </snapshotRepository>
 
   </distributionManagement>
@@ -134,6 +134,13 @@
       <artifactId>jakarta.xml.bind-api</artifactId>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+    <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>2.12.6</version>
+    </dependency>
+     
   </dependencies>
 
   <build>
@@ -271,6 +278,14 @@
   </licenses>
 
   <repositories>
+    <!-- joda time release from nexus -->
+    <repository>
+      <id>joda-time</id>
+      <name>joda-time releases</name>
+      <url>http://localhost:8081/repository/joda-release/</url>
+      <!-- <enabled>true</enabled> -> this is used to enable snapshots i believe -->
+    </repository>
+
     <repository>
       <id>spring-snapshots</id>
       <name>Spring Snapshots</name>
