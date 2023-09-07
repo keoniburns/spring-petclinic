@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>3.1.2</version>
+  <version>3.1.1</version>
   
   <distributionManagement>
 
     <repository>
       <id>spc</id>
       <name>internal release</name>
-      <url>http://localhost:8081/repository/spc-release/</url>
+      <url>https://30ad-2603-3006-9-1200-e865-c4bd-a76f-c6d0.ngrok-free.app/repository/spc-release/</url>
     </repository>
       
     <snapshotRepository>

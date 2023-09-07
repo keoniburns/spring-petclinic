@@ -4,8 +4,9 @@ name: Java CI with Maven
 # pull_request:
 #   branches: [ main ]
 on:
-  workflow_dispatch:
-  
+  # workflow_dispatch:
+  push:
+    branches: [master]
 
 jobs:
   build:
@@ -26,4 +27,4 @@ jobs:
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
       - name: deploy to nexus
-        run: ./mvnw deploy
+        run: mvn deploy --settings ../../settings.xml
