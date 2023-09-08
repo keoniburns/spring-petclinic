@@ -26,5 +26,7 @@ jobs:
           cache: maven
       - name: Build with Maven Wrapper
         run: ./mvnw -B package
+
       - name: deploy to nexus
-        run: mvn deploy --settings ../../settings.xml
+        run: mvn deploy --settings $GITHUB_WORKSPACE/settings.xml
+    

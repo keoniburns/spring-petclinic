@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
 <servers>
     <server>
-        <id>spc</id>
+        <id>spc</id> <!-- this info should be in .env files or something not directly coded in probably-->
         <username>admin</username>
         <password>1234</password>
     </server>
